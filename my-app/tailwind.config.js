@@ -4,6 +4,24 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+    fontFamily: {
+      sans: ['Roboto Mono', 'monospace'],
+      serif: ['Merriweather', 'serif'],
+    },
+    colors: {
+      'primary': '#2AB7B7',
+      'secondary': '#F7F7F7',
+      'backgroundColor': '#292929',
+      'whiteColor': '#ffffff',
+      'blackColor': '#000000',
+    },
+
     extend: {},
   },
   plugins: [],
