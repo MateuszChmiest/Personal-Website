@@ -18,13 +18,13 @@ const Hero = () => {
 						<p className={"text-primary md:text-xl"}>Hi, my name is</p>
 						<h1
 							className={
-								"text-4xl md:text-5xl xl:text-7xl font-semibold text-secondary"
+								"text-4xl md:text-5xl xl:text-7xl text-secondary"
 							}>
 							Mateusz Chmiest
 						</h1>
 						<div
 							className={
-								"text-4xl md:text-5xl xl:text-7xl font-semibold text-secondary text-opacity-60"
+								"text-4xl md:text-5xl xl:text-7xl text-secondary text-opacity-60"
 							}>
 							<Typewriter
 								onInit={(typewriter) => {
@@ -51,7 +51,7 @@ const Hero = () => {
 						/>
 					</div>
 				</div>
-				<div className={"absolute -bottom-2 w-full z-10"}>
+				<div className={"absolute -bottom-1 w-full z-10"}>
 					<Wave />
 				</div>
 			</div>
