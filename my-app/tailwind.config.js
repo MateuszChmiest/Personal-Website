@@ -12,7 +12,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Roboto Mono', 'monospace'],
-      serif: ['Merriweather', 'serif'],
+      serif: ['Raleway', 'sans-serif'],
     },
     colors: {
       'primary': '#2AB7B7',

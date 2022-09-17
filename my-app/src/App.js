@@ -1,10 +1,12 @@
 import React from "react";
+import Hero from "./components/Hero/Hero";
+import Layout from "./layouts/Layout";
 
 const App = () => {
   return (
-    <div className={"text-3xl font-sans font-regular container"}>
-      Okej aaaabc
-    </div>
+    <Layout>
+      <Hero/>
+    </Layout>
   );
 }
 
