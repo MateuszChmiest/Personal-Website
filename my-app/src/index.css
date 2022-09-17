@@ -3,32 +3,59 @@
 @tailwind utilities;
 
 @layer base {
-
-  li {
-    @apply px-4;
-    @apply cursor-pointer;
-  }
+	li {
+		@apply px-6;
+		@apply cursor-pointer;
+	}
 
 }
 
 @layer components {
-    .container {
-      width: 100%;
-  
-      @media (min-width: 480px) {
-        max-width: 480px;
-      }
-  
-      @media (min-width: 768px) {
-        max-width: 768px;
-      }
-  
-      @media (min-width: 976px) {
-        max-width: 976px;
-      }
-  
-      @media (min-width: 1440px) {
-        max-width: 1440px;
-      }
-    }
+	.container {
+		width: 100%;
+
+		@media (min-width: 480px) {
+			max-width: 480px;
+		}
+
+		@media (min-width: 768px) {
+			max-width: 768px;
+		}
+
+		@media (min-width: 976px) {
+			max-width: 976px;
+		}
+
+		@media (min-width: 1440px) {
+			max-width: 1440px;
+		}
+	}
+
+	.gradient {
+		background: radial-gradient(
+					circle,
+					rgb(48, 183, 183, 0.09) 0,
+					hsl(180, 58%, 45%, 0) 35%
+				)
+				no-repeat -23vw -25vh/100% 100%,
+			radial-gradient(circle, rgb(68, 64, 64, 0.6) 0, hsl(0, 0%, 16%, 0) 45%)
+				no-repeat -5vw -10vh/140% 120%,
+			radial-gradient(circle, rgb(20, 13, 13, 0.45) 0, hsl(0, 0%, 16%, 0) 25%)
+				no-repeat -15vw 20vh/100% 100%;
+	}
+
+	.gradient-two {
+		background: radial-gradient(
+					circle,
+					rgb(28, 54, 112, 0.45) 0,
+					hsla(0, 0%, 100%, 0) 45%
+				)
+				no-repeat 15vw -18vh/120% 100%,
+			radial-gradient(
+        circle, 
+        rgb(48, 183, 183, 0.1) 0,
+        hsl(180, 58%, 45%, 0) 45%
+        )
+				no-repeat -25vw 15vh/120% 100%;
+	}
 }
