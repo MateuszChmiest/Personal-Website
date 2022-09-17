@@ -52,7 +52,7 @@ const Navigation = () => {
 	return (
 		<div
 			className={clsx(
-				"w-full h-[70px] flex justify-between items-center px-8 text-secondary fixed z-30", {"bg-blackColor bg-opacity-70 transition-colors duration-300": navBackground})
+				"w-full h-[70px] flex justify-between items-center px-4 lg:px-8 text-secondary fixed z-30", {"bg-blackColor bg-opacity-70 transition-colors duration-300": navBackground})
 			}>
 			<div>
 				<img src={Logo} alt='logo image' className={"max-w-[145px] w-full"} />
