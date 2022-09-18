@@ -8,7 +8,7 @@ const Hero = () => {
 		<>
 			<div
 				className={
-					"h-screen w-full bg-backgroundColor bg-fixed flex justify-center items-center relative gradient"
+					"h-screen w-full bg-backgroundColor flex justify-center items-center relative gradient"
 				}>
 				<div
 					className={
