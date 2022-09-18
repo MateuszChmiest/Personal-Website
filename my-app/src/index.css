@@ -34,20 +34,20 @@
 	.gradient {
 		background: radial-gradient(
 					circle,
-					rgb(48, 183, 183, 0.09) 0,
-					hsl(180, 58%, 45%, 0) 35%
+					rgb(48, 183, 183, 0.1) 0,
+					hsl(180, 58%, 45%, 0) 40%
 				)
 				no-repeat -23vw -25vh/100% 100%,
 			radial-gradient(
         circle, 
-        rgb(68, 64, 64, 0.8) 0, 
+        rgb(68, 64, 64, 0.9) 0, 
         hsl(0, 0%, 16%, 0) 45%
         )
 				no-repeat -5vw -10vh/140% 120%,
 			radial-gradient(
         circle, 
         rgb(28, 54, 112, 0.4) 0,
-        hsla(0, 0%, 100%, 0) 35%
+        hsla(0, 0%, 100%, 0) 40%
         )
 				no-repeat -5vw 20vh/100% 100%;
 	}

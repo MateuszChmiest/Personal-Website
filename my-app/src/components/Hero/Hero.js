@@ -24,7 +24,7 @@ const Hero = () => {
 						</h1>
 						<div
 							className={
-								"text-4xl md:text-5xl xl:text-7xl text-secondary text-opacity-60"
+								"text-4xl xl:text-5xl text-secondary text-opacity-60"
 							}>
 							<Typewriter
 								onInit={(typewriter) => {
