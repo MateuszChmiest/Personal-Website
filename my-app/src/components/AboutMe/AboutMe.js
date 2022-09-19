@@ -4,22 +4,22 @@ import MyPhoto from "../../asstes/myPhoto.JPG"
 const AboutMe = () => {
 
 	return (
-		<div className={"w-full h-screen flex justify-center items-center"}>
+		<div className={"w-full h-full min-h-[700px] flex justify-center items-center"}>
 			<div
 				className={
 					"container h-full mx-auto flex flex-col justify-center items-center -mt-20"
 				}>
 				<div className={"grid grid-cols-2 gap-8 w-full"}>
-					<div className={"text-right pb-8 pl-4"}>
+					<div className={"md:text-right mb-4 pb-8 pl-4"}>
 						<p
-							className={"text-2xl sm:text-3xl md:text-4xl text-primary inline border-b-2 border-blackColor"}>
+							className={"text-2xl sm:text-3xl md:text-4xl text-backgroundColor inline border-b-[3px] font-bold border-primary"}>
 							About Me
 						</p>
 					</div>
 					<div></div>
 				</div>
 				<div className={"container grid grid-cols-2 gap-8"}>
-					<div className={"ml-2"}>
+					<div className={"ml-2 md:mr-2 relative frame"}>
 						<img className={"max-w-[280px] w-full float-right"} src={MyPhoto} alt="Mateusz portrait"/>
 					</div>
 					<div className={"mr-2"}>

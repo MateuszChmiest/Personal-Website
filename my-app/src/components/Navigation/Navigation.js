@@ -55,7 +55,7 @@ const Navigation = () => {
 	return (
 		<div
 			className={clsx(
-				"w-full h-[70px] flex justify-between items-center px-4 lg:px-8 text-secondary fixed z-30",
+				"w-full h-[70px] flex justify-center md:justify-between items-center px-4 lg:px-8 text-secondary fixed z-30",
 				{
 					"bg-blackColor bg-opacity-70 transition-colors duration-300":
 						navBackground,
@@ -83,7 +83,7 @@ const Navigation = () => {
 			</div>
 
 			{/* Burger */}
-			<div className={"md:hidden z-20"}>
+			<div className={"absolute right-3 top-5 md:hidden z-20"}>
 				<FaBars
 					className={clsx(
 						"text-2xl cursor-pointer ease-in transition-transform",

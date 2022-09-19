@@ -41,17 +41,9 @@
 					hsl(180, 58%, 45%, 0) 40%
 				)
 				no-repeat -23vw -25vh/100% 100%,
-			radial-gradient(
-        circle, 
-        rgb(68, 64, 64, 0.9) 0, 
-        hsl(0, 0%, 16%, 0) 45%
-        )
+			radial-gradient(circle, rgb(68, 64, 64, 0.9) 0, hsl(0, 0%, 16%, 0) 45%)
 				no-repeat -5vw -10vh/140% 120%,
-			radial-gradient(
-        circle, 
-        rgb(28, 54, 112, 0.4) 0,
-        hsla(0, 0%, 100%, 0) 40%
-        )
+			radial-gradient(circle, rgb(28, 54, 112, 0.4) 0, hsla(0, 0%, 100%, 0) 40%)
 				no-repeat -5vw 20vh/100% 100%;
 	}
 
@@ -63,10 +55,82 @@
 				)
 				no-repeat 15vw -18vh/120% 100%,
 			radial-gradient(
-        circle, 
-        rgb(48, 183, 183, 0.1) 0,
-        hsl(180, 58%, 45%, 0) 45%
-        )
+					circle,
+					rgb(48, 183, 183, 0.1) 0,
+					hsl(180, 58%, 45%, 0) 45%
+				)
 				no-repeat -25vw 15vh/120% 100%;
+	}
+
+	.frame::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		max-width: 150px;
+		max-height: 220px;
+		top: -7px;
+		right: 25px;
+		z-index: -1;
+		border: 3px solid #2ab7b7;
+	}
+
+	.frame::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		max-width: 150px;
+		max-height: 220px;
+		bottom: -6px;
+		right: -8px;
+		z-index: -1;
+		background: rgb(0,116,116);
+		background: linear-gradient(0deg, rgba(0,116,116,1) 7%, rgba(42,183,183,1) 100%);
+	}
+
+	@media (min-width: 480px) {
+		.frame::after {
+			width: 265px;
+			height: 320px;
+			max-width: 100%;
+			max-height: 100%;
+			bottom: -12px;
+			right: -12px;
+		}
+
+		.frame::before {
+			width: 265px;
+			height: 370px;
+			max-width: 100%;
+			max-height: 100%;
+			top: -13px;
+			right: 14px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.frame::after {
+			content: "";
+			position: absolute;
+			width: 265px;
+			height: 370px;
+			bottom: -15px;
+			right: -15px;
+			z-index: -1;
+			background: rgb(0,116,116);
+			background: linear-gradient(0deg, rgba(0,116,116,1) 7%, rgba(42,183,183,1) 100%);
+		}
+
+		.frame::before {
+			content: "";
+			position: absolute;
+			width: 265px;
+			height: 370px;
+			top: -15px;
+			right: 35px;
+			z-index: -1;
+			border: 4px solid #2ab7b7;
+		}
 	}
 }
