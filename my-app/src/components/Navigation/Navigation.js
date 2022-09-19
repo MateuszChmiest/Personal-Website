@@ -103,8 +103,12 @@ const Navigation = () => {
 				}>
 				{menu.map((item, index) => (
 					<LinkScroll
+						to={item.nav}
+						spy={true}
+						smooth={true}
+						duration={500}
 						key={index}
-						className={"py-4 text-3xl"}
+						className={"py-4 text-3xl cursor-pointer"}
 						onClick={handleClick}>
 						{item.name}
 					</LinkScroll>
