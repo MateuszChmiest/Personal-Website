@@ -20,7 +20,7 @@ const AboutMe = () => {
 				</div>
 				<div className={"container grid grid-cols-2 gap-8"}>
 					<div className={"ml-2"}>
-						<img className={"max-w-[280px] w-full float-right"} src={MyPhoto} alt="Mateusz photo"/>
+						<img className={"max-w-[280px] w-full float-right"} src={MyPhoto} alt="Mateusz portrait"/>
 					</div>
 					<div className={"mr-2"}>
 						<p className={"text-[10px] xs:text-[12px] leading-tight sm:text-sm md:leading-8 md:text-xl max-w-xs"}>I started my adventure with programming in December 2021, on a course at the IT school "Coders Lab". In programming, I am fascinated by the possibility of creating, constant development and the end result of my work. I'm an ambitious person with a great willingness to learn and develop.</p>

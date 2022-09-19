@@ -2,6 +2,7 @@ import React from "react";
 import Wave from "../../elements/Wave/Wave";
 import Typewriter from "typewriter-effect";
 import Button from "../../elements/Button/Button";
+import { Link as LinkScroll } from "react-scroll";
 
 const Hero = () => {
 	return (
@@ -16,16 +17,11 @@ const Hero = () => {
 					}>
 					<div className={"md:mb-20"}>
 						<p className={"text-primary md:text-xl"}>Hi, my name is</p>
-						<h1
-							className={
-								"text-4xl md:text-5xl xl:text-7xl text-secondary"
-							}>
+						<h1 className={"text-4xl md:text-5xl xl:text-7xl text-secondary"}>
 							Mateusz Chmiest
 						</h1>
 						<div
-							className={
-								"text-4xl xl:text-5xl text-secondary text-opacity-60"
-							}>
+							className={"text-4xl xl:text-5xl text-secondary text-opacity-60"}>
 							<Typewriter
 								onInit={(typewriter) => {
 									typewriter
@@ -45,10 +41,12 @@ const Hero = () => {
 							applications. Currently I am focusing on learning typescript and
 							docker.
 						</p>
-						<Button
-							text={"Portfolio"}
-							classes={"py-2 w-1/2 md:w-1/3 mt-2 md:text-xl"}
-						/>
+						<LinkScroll to='Projects' spy={true} smooth={true} duration={500}>
+							<Button
+								text={"Portfolio"}
+								classes={"py-2 w-1/2 md:w-1/3 mt-2 md:text-xl"}
+							/>
+						</LinkScroll>
 					</div>
 				</div>
 				<div className={"absolute -bottom-1 w-full z-10"}>

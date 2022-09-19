@@ -19,7 +19,7 @@ const Skills = () => {
         <div className={"container mx-auto p-4 flex flex-col justify-center h-full"}>
             <div>
                 <p className={"text-3xl md:text-4xl text-primary inline border-b-2 border-blackColor"}>My Skills</p>
-                <p className={"py-4"}>// I've worked with these technologies</p>
+                <p className={"py-4"}>\\ I've worked with these technologies</p>
             </div>
 
             <div className={"w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 "}>
