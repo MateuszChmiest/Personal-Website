@@ -133,4 +133,11 @@
 			border: 4px solid #2ab7b7;
 		}
 	}
+
+	.content-div {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 300px;
+	}
 }

@@ -5,6 +5,7 @@ import Layout from "./layouts/Layout";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Skills from "./components/Skills/Skills";
 import { Element } from "react-scroll";
+import Projects from "./components/Projects/Projects";
 
 const App = () => {
 	return (
@@ -18,6 +19,9 @@ const App = () => {
 				</Element>
 				<Element name='Skills'>
 					<Skills />
+				</Element>
+				<Element name='Projects'>
+					<Projects />
 				</Element>
 			</Layout>
 		</ParallaxProvider>
