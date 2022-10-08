@@ -15,7 +15,7 @@ const Projects = () => {
 						}>
 						Projects
 					</p>
-					<p className={"py-4"}>\\ Check My projects</p>
+					<p className={"py-4"}>\\ Check My projects.</p>
 				</div>
 				<Carousel/>
 			</div>
