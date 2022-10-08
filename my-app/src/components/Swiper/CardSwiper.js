@@ -1,25 +1,18 @@
 import React from "react";
-import project1 from "../../asstes/project1.png";
 
-const CardSwiper = () => {
+const CardSwiper = ({ image, hrefDemo, hrefCode, name }) => {
 	return (
-		<div>
+		<div className={"text-center pb-8"}>
 			<div
 				className={
 					"shadow-md shadow-backgroundColor group flex justify-center items-center mx-auto content-div"
 				}>
-				<img src={project1} className={"border-2"}/>
-				<div className={"opacity-0 group-hover:opacity-100"}>
-					<span></span>
-					<div>
-						<a href='/'>
-							<button></button>
-						</a>
-						<a href='/'>
-							<button></button>
-						</a>
-					</div>
-				</div>
+				<img src={image} className={"border-2"} />
+			</div>
+			<div className={""}>
+				<h1 className={"my-2"}>{name}</h1>
+				<button type="button" className={"border-2 border-primary hover:bg-primary duration-200 text-blackColor px-5 font-medium cursor-pointer z-50 text-lg"}><a href={hrefDemo} target="_blank">Demo</a></button>
+				<button type="button" className={"border-2 border-primary hover:bg-primary duration-200 text-blackColor px-5 font-medium cursor-pointer ml-3 z-50 text-lg"}><a href={hrefCode} target="_blank">Code</a></button>
 			</div>
 		</div>
 	);
