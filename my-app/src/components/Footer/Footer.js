@@ -1,22 +1,9 @@
-import React from "react";
-import FooterWave from "../../elements/Wave/FooterWave";
+import React from 'react'
 
 const Footer = () => {
-	return (
-		<>
-			<div
-				className={
-					"h-screen w-full bg-backgroundColor flex justify-center items-center relative gradient"
-				}>
-				<div className={"container flex items-center justify-center"}>
-					<div>Footer</div>
-				</div>
-        <div className={"absolute -top-1 w-full z-10"}>
-					<FooterWave />
-				</div>
-			</div>
-		</>
-	);
-};
+  return (
+    <div className={"bg-backgroundColor "}>Footer</div>
+  )
+}
 
-export default Footer;
+export default Footer

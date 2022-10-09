@@ -3,10 +3,10 @@ import Carousel from "../Swiper/Swiper";
 
 const Projects = () => {
 	return (
-		<div className={"w-full h-screen"}>
+		<div>
 			<div
 				className={
-					"container mx-auto p-4 flex flex-col justify-center w-full h-full"
+					"container mx-auto p-4 flex flex-col justify-center w-full h-full  min-h-[800px]"
 				}>
 				<div className={"pb-8"}>
 					<p
@@ -15,7 +15,7 @@ const Projects = () => {
 						}>
 						Projects
 					</p>
-					<p className={"py-4"}>\\ Check My projects.</p>
+					<p className={"py-4"}>\\ Check My projects</p>
 				</div>
 				<Carousel/>
 			</div>

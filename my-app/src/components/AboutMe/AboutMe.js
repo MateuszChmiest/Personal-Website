@@ -4,10 +4,10 @@ import MyPhoto from "../../asstes/myPhoto.JPG"
 const AboutMe = () => {
 
 	return (
-		<div className={"w-full h-full min-h-[700px] flex justify-center items-center"}>
+		<div className={"w-full h-full min-h-[800px] flex justify-center items-center -mt-20"}>
 			<div
 				className={
-					"container h-full mx-auto flex flex-col justify-center items-center -mt-20"
+					"container h-full mx-auto flex flex-col justify-center items-center"
 				}>
 				<div className={"grid grid-cols-2 gap-8 w-full"}>
 					<div className={"md:text-right mb-4 pb-8 pl-4"}>

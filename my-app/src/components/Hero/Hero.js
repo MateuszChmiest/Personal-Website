@@ -21,9 +21,14 @@ const Hero = () => {
 						<h1 className={"text-4xl md:text-5xl xl:text-7xl text-secondary"}>
 							Mateusz Chmiest
 						</h1>
-						<div
+						<p
 							className={"text-4xl xl:text-5xl text-secondary text-opacity-60"}>
 							<Typewriter
+							options={{
+								delay: 100,
+								loop: true,
+								deleteSpeed: 60,
+							}}
 								onInit={(typewriter) => {
 									typewriter
 										.typeString("I'm a Frontend Developer.")
@@ -33,7 +38,7 @@ const Hero = () => {
 										.start();
 								}}
 							/>
-						</div>
+						</p>
 						<p
 							className={
 								"py-4 max-w-xl xl:max-w-2xl xl:text-xl text-secondary text-opacity-60"
