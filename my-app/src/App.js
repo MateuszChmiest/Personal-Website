@@ -6,6 +6,7 @@ import Skills from "./components/Skills/Skills";
 import { Element } from "react-scroll";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
+import AnimCursor from "./elements/AnimatedCursor/AnimatedCursor"
 
 const App = () => {
 	return (
@@ -25,6 +26,7 @@ const App = () => {
 				<Element name='Contact'>
 					<Contact/>
 				</Element>
+				<AnimCursor/>
 			</Layout>
 	);
 };

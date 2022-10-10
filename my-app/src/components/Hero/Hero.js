@@ -25,16 +25,17 @@ const Hero = () => {
 							className={"text-4xl xl:text-5xl text-secondary text-opacity-60"}>
 							<Typewriter
 							options={{
-								delay: 100,
+								deleteSpeed: 100,
 								loop: true,
-								deleteSpeed: 60,
+								delay: 70,
 							}}
 								onInit={(typewriter) => {
 									typewriter
 										.typeString("I'm a Frontend Developer.")
-										.pauseFor(1000)
+										.pauseFor(300)
 										.deleteAll()
 										.typeString("Check my portfolio!")
+										.pauseFor(300)
 										.start();
 								}}
 							/>
