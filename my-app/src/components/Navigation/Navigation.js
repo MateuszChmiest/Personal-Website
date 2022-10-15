@@ -2,11 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import Logo from "../../asstes/logo.png";
 import { FaBars, FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiFillFileText } from "react-icons/ai";
+import { BiShareAlt } from "react-icons/bi";
 import clsx from "clsx";
 import { Link as LinkScroll } from "react-scroll";
 
 const Navigation = () => {
 	const [nav, setNav] = useState(false);
+	const [mobileMenu, setMobileMenu] = useState(false)
 	const handleClick = () => setNav(!nav);
 	const [navBackground, setNavBackground] = useState(false);
 	const navRef = useRef();
@@ -125,7 +127,7 @@ const Navigation = () => {
 						<a
 							href='https://www.linkedin.com/in/mateusz-chmiest/'
 							className={
-								"flex justify-between items-center w-full text-secondary hover:text-backgroundColor duration-200"
+								"flex justify-between items-center w-full text-secondary hover:text-backgroundColor"
 							}>
 							Linkedin <FaLinkedin size={30} className={"-mr-2"} />
 						</a>
@@ -137,7 +139,7 @@ const Navigation = () => {
 						<a
 							href='https://github.com/MateuszChmiest'
 							className={
-								"flex justify-between items-center w-full text-secondary hover:text-opacity-60 duration-200"
+								"flex justify-between items-center w-full text-secondary hover:text-opacity-60"
 							}>
 							GitHub <FaGithub size={30} className={"-mr-2"} />
 						</a>
@@ -149,12 +151,60 @@ const Navigation = () => {
 						<a
 							href='https://drive.google.com/file/d/18DlxeUI-preg4KnDTEAvSFbue31g5f7E/view'
 							className={
-								"flex justify-between items-center w-full text-secondary hover:text-backgroundColor duration-200"
+								"flex justify-between items-center w-full text-secondary hover:text-backgroundColor"
 							}>
 							My CV <AiFillFileText size={30} className={"-mr-2"} />
 						</a>
 					</li>
 				</ul>
+			</div>
+
+			{/* Mobile Social */}
+			<div className={clsx("md:hidden fixed flex-col bottom-[72px] duration-500 right-3 mr-[-100px] z-30", {"mr-[0]" : mobileMenu})}>
+				<ul>
+					<li
+						className={
+							"w-14 h-14 flex justify-center items-center bg-[#389bf7] rounded-full"
+						}>
+						<a
+							href='https://www.linkedin.com/in/mateusz-chmiest/'
+							target="_blank"
+							rel="noreferrer"
+							className={"text-secondary text-2xl"}>
+							<FaLinkedin />
+						</a>
+					</li>
+					<li
+						className={
+							"w-14 h-14 flex justify-center items-center my-1 bg-primary rounded-full"
+						}>
+						<a
+							href='https://github.com/MateuszChmiest'
+							target="_blank"
+							rel="noreferrer"
+							className={"text-secondary text-2xl"}>
+							<FaGithub />
+						</a>
+					</li>
+					<li
+						className={
+							"w-14 h-14 flex justify-center items-center bg-[#161c21] rounded-full"
+						}>
+						<a
+							href='https://drive.google.com/file/d/18DlxeUI-preg4KnDTEAvSFbue31g5f7E/view'
+							target="_blank"
+							rel="noreferrer"
+							className={"text-secondary text-2xl"}>
+							<AiFillFileText />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div
+				className={clsx(
+					"w-14 h-14 fixed md:hidden bottom-3 right-3 bg-primary rounded-full flex items-center justify-center mt-1 text-xl border-2 border-[#21a0a0]", {"animate-bounce" : !mobileMenu})
+				} onClick={() => setMobileMenu(!mobileMenu)}>
+				<BiShareAlt />
 			</div>
 		</div>
 	);
