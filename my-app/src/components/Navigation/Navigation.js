@@ -126,6 +126,8 @@ const Navigation = () => {
 						}>
 						<a
 							href='https://www.linkedin.com/in/mateusz-chmiest/'
+							target="_blank"
+							rel="noreferrer"
 							className={
 								"flex justify-between items-center w-full text-secondary hover:text-backgroundColor"
 							}>
@@ -138,6 +140,8 @@ const Navigation = () => {
 						}>
 						<a
 							href='https://github.com/MateuszChmiest'
+							target="_blank"
+							rel="noreferrer"
 							className={
 								"flex justify-between items-center w-full text-secondary hover:text-opacity-60"
 							}>
@@ -150,6 +154,8 @@ const Navigation = () => {
 						}>
 						<a
 							href='https://drive.google.com/file/d/18DlxeUI-preg4KnDTEAvSFbue31g5f7E/view'
+							target="_blank"
+							rel="noreferrer"
 							className={
 								"flex justify-between items-center w-full text-secondary hover:text-backgroundColor"
 							}>

@@ -27,7 +27,7 @@ const Hero = () => {
 							options={{
 								deleteSpeed: 100,
 								loop: true,
-								delay: 70,
+								delay: 80,
 							}}
 								onInit={(typewriter) => {
 									typewriter
