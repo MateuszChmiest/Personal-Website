@@ -10,7 +10,7 @@ const Hero = () => {
 		<>
 			<div
 				className={
-					"h-screen w-full bg-backgroundColor flex justify-center items-center relative gradient"
+					"min-h-[750px] md:min-h-[900px] xl:min-h-[1200px] w-full bg-backgroundColor flex justify-center items-center relative gradient"
 				}>
 				<div
 					className={

@@ -6,28 +6,42 @@ import Skills from "./components/Skills/Skills";
 import { Element } from "react-scroll";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
-import AnimCursor from "./elements/AnimatedCursor/AnimatedCursor"
+import AnimCursor from "./elements/AnimatedCursor/AnimatedCursor";
+import {
+	Animator,
+	batch,
+	Fade,
+	FadeIn,
+	MoveIn,
+	MoveOut,
+	ScrollContainer,
+	ScrollPage,
+	Sticky,
+	Zoom,
+	ZoomIn,
+	ZoomOut,
+} from "react-scroll-motion";
 
 const App = () => {
 	return (
-			<Layout>
-				<Element name='Hero'>
-					<Hero />
-				</Element>
-				<Element name='AboutMe'>
-					<AboutMe />
-				</Element>
-				<Element name='Skills'>
-					<Skills />
-				</Element>
-				<Element name='Projects'>
-					<Projects />
-				</Element>
-				<Element name='Contact'>
-					<Contact/>
-				</Element>
-				<AnimCursor/>
-			</Layout>
+		<Layout>
+			<Element name='Hero'>
+				<Hero />
+			</Element>
+			<Element name='AboutMe'>
+				<AboutMe />
+			</Element>
+			<Element name='Skills'>
+				<Skills />
+			</Element>
+			<Element name='Projects'>
+				<Projects />
+			</Element>
+			<Element name='Contact'>
+				<Contact />
+			</Element>
+			<AnimCursor />
+		</Layout>
 	);
 };
 

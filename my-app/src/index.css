@@ -150,4 +150,8 @@
 		-webkit-text-fill-color: transparent;
 	  }
 	
+	  .show {
+		  opacity: 1;
+		  
+	  }
 }

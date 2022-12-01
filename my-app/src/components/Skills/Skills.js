@@ -16,7 +16,7 @@ import git from "../../asstes/git.png"
 const Skills = () => {
   return (
     <div>
-        <div className={"container mx-auto p-4 flex flex-col justify-center min-h-[800px] h-full"}>
+        <div className={"container mx-auto p-4 flex flex-col justify-center min-h-[800px] "}>
             <div>
                 <p className={"text-2xl sm:text-3xl md:text-4xl font-bold text-backgroundColor inline border-b-[3px] border-primary"}>My Skills</p>
                 <p className={"py-4"}>\\ I've worked with these technologies</p>

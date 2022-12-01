@@ -4,7 +4,7 @@ import MyPhoto from "../../asstes/myPhoto.JPG"
 const AboutMe = () => {
 
 	return (
-		<div className={"w-full h-full min-h-[800px] flex justify-center items-center -mt-20"}>
+		<div className={"w-full min-h-[800px] flex justify-center items-center -mt-20"}>
 			<div
 				className={
 					"container h-full mx-auto flex flex-col justify-center items-center"

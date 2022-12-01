@@ -6,7 +6,7 @@ const Projects = () => {
 		<div>
 			<div
 				className={
-					"container mx-auto p-4 flex flex-col justify-center w-full h-full  min-h-[800px]"
+					"container mx-auto p-4 flex flex-col justify-center w-full min-h-[800px] "
 				}>
 				<div className={"pb-8"}>
 					<p
