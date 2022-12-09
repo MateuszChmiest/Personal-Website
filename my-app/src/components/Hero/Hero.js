@@ -10,7 +10,7 @@ const Hero = () => {
 		<>
 			<div
 				className={
-					"min-h-[750px] md:min-h-[900px] xl:min-h-[1000px] w-full bg-backgroundColor flex justify-center items-center relative gradient"
+					"min-h-[750px] md:min-h-[900px] xl:min-h-[1000px] xxl:min-h-[1300px] w-full bg-backgroundColor flex justify-center items-center relative gradient"
 				}>
 				<div
 					className={
@@ -46,7 +46,7 @@ const Hero = () => {
 							}>
 							I am a frontend developer specializing in building web
 							applications. Currently I am focusing on learning typescript and
-							docker.
+							React Native.
 						</p>
 						<LinkScroll to='Projects' spy={true} smooth={true} duration={500}>
 							<Button

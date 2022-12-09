@@ -1,12 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Carousel from "../Swiper/Swiper";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Projects = () => {
+
+	const { ref, inView } = useInView({
+		threshold: 0.3
+	});
+	const animation = useAnimation();
+
+	useEffect(() => {
+		if (inView) {
+			animation.start({
+				x: 0,
+				transition: {
+					type: "spring",
+					duration: 1.4,
+					bounce: 0.2,
+				},
+			});
+		}
+
+		if (!inView) {
+			animation.start({x: `-100vw`});
+		}
+	}, [inView]);
+
 	return (
-		<div>
-			<div
+		<div ref={ref}>
+			<motion.div
+			animate={animation}
 				className={
-					"container mx-auto p-4 flex flex-col justify-center w-full min-h-[800px] "
+					"container mx-auto p-4 flex flex-col justify-center w-full min-h-[900px] "
 				}>
 				<div className={"pb-8"}>
 					<p
@@ -18,7 +44,7 @@ const Projects = () => {
 					<p className={"py-4"}>\\ Check My projects</p>
 				</div>
 				<Carousel/>
-			</div>
+			</motion.div>
 		</div>
 	);
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import html from "../../asstes/html-5.png";
 import css from "../../asstes/css.png";
 import js from "../../asstes/js.png";
@@ -10,14 +10,39 @@ import react from "../../asstes/react.png";
 import bootstrap from "../../asstes/bootstrap.png";
 import graphql from "../../asstes/graphql.png";
 import gatsby from "../../asstes/gatsby.png"
-import git from "../../asstes/git.png"
+import git from "../../asstes/git.png";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 
 const Skills = () => {
+
+    const { ref, inView } = useInView({
+		threshold: 0.3
+	});
+	const animation = useAnimation();
+
+	useEffect(() => {
+		if (inView) {
+			animation.start({
+				x: 0,
+				transition: {
+					type: "spring",
+					duration: 1.4,
+					bounce: 0.2,
+				},
+			});
+		}
+
+		if (!inView) {
+			animation.start({x: `-100vw`});
+		}
+	}, [inView]);
+
   return (
-    <div>
-        <div className={"container mx-auto p-4 flex flex-col justify-center min-h-[800px] "}>
-            <div>
+    <div ref={ref}>
+        <motion.div animate={animation} className={"container mx-auto p-4 flex flex-col justify-center min-h-[900px]"}>
+            <div className='pt-8'>
                 <p className={"text-2xl sm:text-3xl md:text-4xl font-bold text-backgroundColor inline border-b-[3px] border-primary"}>My Skills</p>
                 <p className={"py-4"}>\\ I've worked with these technologies</p>
             </div>
@@ -72,7 +97,7 @@ const Skills = () => {
                     <p className={"py-4"}>GIT</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     </div>
   )
 }

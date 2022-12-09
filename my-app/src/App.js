@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Hero from "./components/Hero/Hero";
 import Layout from "./layouts/Layout";
@@ -7,22 +7,10 @@ import { Element } from "react-scroll";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import AnimCursor from "./elements/AnimatedCursor/AnimatedCursor";
-import {
-	Animator,
-	batch,
-	Fade,
-	FadeIn,
-	MoveIn,
-	MoveOut,
-	ScrollContainer,
-	ScrollPage,
-	Sticky,
-	Zoom,
-	ZoomIn,
-	ZoomOut,
-} from "react-scroll-motion";
+
 
 const App = () => {
+
 	return (
 		<Layout>
 			<Element name='Hero'>
