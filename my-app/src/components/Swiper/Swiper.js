@@ -11,6 +11,7 @@ import project2 from "../../asstes/project2.png";
 import project3 from "../../asstes/project3.png";
 import project4 from "../../asstes/project4.png";
 import project5 from "../../asstes/project5.png";
+import project6 from "../../asstes/project6.png"
 
 const Carousel = () => {
 	return (
@@ -44,19 +45,58 @@ const Carousel = () => {
 					},
 				}}>
 				<SwiperSlide>
-					<CardSwiper name={"YourServiceBook"} image={project1} alt={"your service book"} hrefDemo="https://your-service-book.vercel.app/" hrefCode={"https://github.com/MateuszChmiest/YourServiceBook"}/>
+					<CardSwiper
+						name={"(In Progress..)"}
+						image={project6}
+						alt={"food delivery"}
+						hrefDemo='https://food-delivery-typescript.vercel.app/'
+						hrefCode={"https://github.com/MateuszChmiest/FoodDelivery"}
+					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<CardSwiper name={"Oddaj w dobre ręce"} image={project2} alt={"oddaj w dobre ręce"} hrefDemo={"https://oddaj-w-dobre-rece.vercel.app/"} hrefCode={"https://github.com/MateuszChmiest/Oddaj-w-dobre-rece"}/>
+					<CardSwiper
+						name={"YourServiceBook"}
+						image={project1}
+						alt={"your service book"}
+						hrefDemo='https://your-service-book.vercel.app/'
+						hrefCode={"https://github.com/MateuszChmiest/YourServiceBook"}
+					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<CardSwiper name={"WeatherReactApp"} image={project3} alt={"weather react app"} hrefDemo={"https://the-weather-react-app.vercel.app/"} hrefCode={"https://github.com/MateuszChmiest/WeatherReactApp"}/>
+					<CardSwiper
+						name={"Oddaj w dobre ręce"}
+						image={project2}
+						alt={"oddaj w dobre ręce"}
+						hrefDemo={"https://oddaj-w-dobre-rece.vercel.app/"}
+						hrefCode={"https://github.com/MateuszChmiest/Oddaj-w-dobre-rece"}
+					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<CardSwiper name={"BestShop"} image={project4} alt={"best shop"} hrefDemo={"https://bestshop-project-mateuszchmiest.netlify.app/"} hrefCode={"https://github.com/MateuszChmiest/BestShop-RWD-Project"}/>
+					<CardSwiper
+						name={"WeatherReactApp"}
+						image={project3}
+						alt={"weather react app"}
+						hrefDemo={"https://the-weather-react-app.vercel.app/"}
+						hrefCode={"https://github.com/MateuszChmiest/WeatherReactApp"}
+					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<CardSwiper name={"MateuszChmiest.pl"} image={project5} alt={"portfolio website"} hrefDemo={"https://mateuszchmiest.vercel.app/"} hrefCode={"https://github.com/MateuszChmiest/Personal-Website"}/>
+					<CardSwiper
+						name={"BestShop"}
+						image={project4}
+						alt={"best shop"}
+						hrefDemo={"https://bestshop-project-mateuszchmiest.netlify.app/"}
+						hrefCode={"https://github.com/MateuszChmiest/BestShop-RWD-Project"}
+					/>
+				</SwiperSlide>
+				<SwiperSlide>
+					<CardSwiper
+						name={"MateuszChmiest.pl"}
+						image={project5}
+						alt={"portfolio website"}
+						hrefDemo={"https://mateuszchmiest.vercel.app/"}
+						hrefCode={"https://github.com/MateuszChmiest/Personal-Website"}
+					/>
 				</SwiperSlide>
 			</Swiper>
 		</div>
