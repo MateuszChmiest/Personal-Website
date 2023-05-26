@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 const AboutMe = () => {
 	const { ref, inView } = useInView({
-		threshold: 0.3
+		threshold: 0.3,
 	});
 	const animation = useAnimation();
 
@@ -22,13 +22,13 @@ const AboutMe = () => {
 		}
 
 		if (!inView) {
-			animation.start({x: `-100vw`});
+			animation.start({ x: `-100vw` });
 		}
 	}, [inView]);
 
 	return (
 		<div
-		ref={ref}
+			ref={ref}
 			className={
 				"w-full min-h-[900px] flex justify-center items-center -mt-20"
 			}>
@@ -59,13 +59,14 @@ const AboutMe = () => {
 					<div className={"mr-2"}>
 						<p
 							className={
-								"text-[10px] xs:text-[12px] leading-tight sm:text-sm md:leading-8 md:text-xl max-w-xs"
+								"text-[10px] xs:text-[11px] leading-tight sm:text-[14px] md:text-lg max-w-xs"
 							}>
-							I started my adventure with programming in December 2021, on a
-							course at the IT school "Coders Lab". In programming, I am
+							While running my own E-commerce store, I thought it would enjoy
+							creating solutions like that, so I started learning front-end
+							development. My basics knowledge about programming I got on a
+							course at the IT school Coders Lab. In programming, I am
 							fascinated by the possibility of creating, constant development
-							and the end result of my work. I'm an ambitious person with a
-							great willingness to learn and develop.
+							and the end result of my work.
 						</p>
 					</div>
 				</div>

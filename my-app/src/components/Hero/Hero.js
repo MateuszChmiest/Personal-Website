@@ -5,12 +5,11 @@ import Button from "../../elements/Button/Button";
 import { Link as LinkScroll } from "react-scroll";
 
 const Hero = () => {
-
 	return (
 		<>
 			<div
 				className={
-					"min-h-[750px] md:min-h-[900px] xl:min-h-[1000px] xxl:min-h-[1300px] w-full bg-backgroundColor flex justify-center items-center relative gradient"
+					"min-h-[750px] md:min-h-[900px] xl:min-h-[970px] xxl:min-h-[1300px] w-full bg-backgroundColor flex justify-center items-center relative gradient"
 				}>
 				<div
 					className={
@@ -24,11 +23,11 @@ const Hero = () => {
 						<p
 							className={"text-4xl xl:text-5xl text-secondary text-opacity-60"}>
 							<Typewriter
-							options={{
-								deleteSpeed: 100,
-								loop: true,
-								delay: 80,
-							}}
+								options={{
+									deleteSpeed: 100,
+									loop: true,
+									delay: 80,
+								}}
 								onInit={(typewriter) => {
 									typewriter
 										.typeString("I'm a Frontend Developer.")
@@ -44,9 +43,9 @@ const Hero = () => {
 							className={
 								"py-4 max-w-xl xl:max-w-2xl xl:text-xl text-secondary text-opacity-60"
 							}>
-							I am a frontend developer specializing in building web
-							applications. Currently I am focusing on learning typescript and
-							React Native.
+							I'm a frontend developer specializing in building web applications
+							with e-commerce experience. Currently I'm focusing on learning
+							TypeScript and Redux.
 						</p>
 						<LinkScroll to='Projects' spy={true} smooth={true} duration={500}>
 							<Button
